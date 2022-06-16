@@ -1,0 +1,67 @@
+
+.education {
+    margin-top: 2rem;
+}
+.education__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses {
+    width: 100%;
+    max-width: 500px;
+
+    .courses__title h2 {
+        @include h2group;
+    }
+}
+.courses__info {
+    transform: translateY(-1rem);
+    text-align: center;
+
+    .courses_subtitle a {
+        text-decoration: none;
+        font-family: $cairo;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: $secondary;
+        transition: color .2s linear;
+
+        &:hover {
+            color: lighten($secondary, 10%);
+        }
+
+    }
+
+    .courses_list {
+        transform: translateY(-1rem);
+        list-style-type: none;
+
+        .list-item {
+            font-family: $cairo;
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.3;
+            letter-spacing: 2px;
+            color: darken($primary, 20%);
+        }
+    }
+}
+.english {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+
+    h2 {
+        @include h2group;
+    }
+    .english__info {
+        font-family: $cairo;
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.3;
+        letter-spacing: 2px;
+        color: $secondary;
+        transform: translateY(-1rem);
+    }
+}
