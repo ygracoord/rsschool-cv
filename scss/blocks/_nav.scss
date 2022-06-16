@@ -1,0 +1,27 @@
+
+.nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $secondary;
+}
+.nav__list {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: $cairo;
+    font-size: 1.2rem;
+    list-style: none;
+
+    .nav__link a {
+        text-decoration: none;
+        color: $secondary;
+        letter-spacing: 2px;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

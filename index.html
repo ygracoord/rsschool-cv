@@ -1,12 +1,135 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV</title>
 </head>
 <body>
-    hello world
+
+<div class="container">
+    <header class="header">
+        <div class="top__header">
+            <div class="cv">Curriculum vitae</div>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__link"><a href="#">contacts</a></li>
+                <li class="nav__link"><a href="#">summary</a></li>
+                <li class="nav__link"><a href="#">skills</a></li>
+                <li class="nav__link"><a href="#">code</a></li>
+                <li class="nav__link"><a href="#">courses</a></li>
+                <li class="nav__link"><a href="#">english</a></li>
+            </ul>
+        </nav>
+        <section class="header__content">
+            <div class="profile">
+                <h1 class="profile__name">Danil Duborezov</h1>
+                <span class="profile__description">Obtain a IT Specialist position where i can maximize my skills and development.</span>
+            </div>
+            <div class="profile__photo">
+                <img src="assets/images/profile-icon.JPG" alt="my photo">
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="contacts">
+            <div class="contacts__inner">
+                <div class="address">
+                    <h3 class="address-title">Address</h3>
+                    <p class="address-info"><a href="https://goo.gl/maps/WrgavNdBpYdqjhTv5" target="_blanc"><img class="map-icon" src="assets/images/icons/map-icon.png" alt="map"></a>Rogachev, Belarus</p>
+                </div>
+                <div class="contacts-info">
+                    <h3 class="contacts-title">Contacts</h3>
+                    <p class="number">Mobile: <a href="#">+375333676707</a></p>
+                    <p class="e-mail">E-mail: <a href="#">ygra.pl@gmail.com</a></p>
+                </div>
+                <div class="birth">
+                    <h3 class="birth-title">Date of birth</h3>
+                    <p class="date">02.04.1994</p>
+                </div>
+                <div class="social">
+                    <h3 class="social-title">Social</h3>
+                    <p class="git"><img class="git-icon" src="assets/images/icons/git-icon.png" alt="github">Github: <a class="git-name" href="https://github.com/ygracoord" target="_blanc">ygracoord</a></p>
+                    <p class="discord"><img class="discord-icon" src="assets/images/icons/discord-icon.png" alt="discord">Discord: <a class="discord-name" href="https://discord.com/channels/ygra.pl#0877" target="_blanc">ygra.pl#0877</a></p>
+                </div>
+        </section>
+
+        <section class="summary">
+            <div class="summary__inner">
+                <h2 class="summary__title">Summary</h2>
+                <div class="summary__text">I am a beginner front-end developer. I started studying in December 2021. In the future I want to study the back-end, but first I want to master pure JS using the React framework.
+                </div>
+            </div>
+            <div class="about__me"><button class="btn">More about me</button></div>
+        </section>
+
+        <section class="skillsAndCode">
+            <div class="skillsAndCode__inner">
+                <div class="skills">
+                    <div class="skills__title"><h2>Skills</h2></div>
+                    <ul class="skills__list">
+                        <li class="skills-item">Web-development:
+                            <span class="skills-name">Html,Css,JavaScript basic</span>
+                        </li>
+                        <li class="skills-item">Preprocessors:
+                            <span class="skills-name">Sass,less</span>
+                        </li>
+                        <li class="skills-item">Version control:
+                            <span class="skills-name">Git, Github</span>
+                        </li>
+                        <li class="skills-item">Graphics:
+                            <span class="skills-name">Figma, Adobe Photoshop, Adobe XD</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="code">
+                    <div class="code__title"><h2>Code</h2></div>
+                    <div class="code__content"><span class="purple">While</span> (alive) { <br> eat(); <br> sleep(); <br> code (); <br> repeat(); <br>  }
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <div class="education__inner">
+                <div class="courses">
+                    <div class="courses__title"><h2>Courses</h2></div>
+                    <div class="courses__info">
+                        <div class="courses_subtitle"><a href="https://belhard.academy/?utm_medium=cpc&utm_source=google&utm_campaign=%7Bname_of_campaign%7D&utm_term=академия%20belhard&gclid=CjwKCAjw46CVBhB1EiwAgy6M4nRhOLx-x1Rj685y6yTZ3W6HmfGKvWKHN-Pxemp-c83ZBLi99sXrmxoCOUEQAvD_BwE" target="_blanc">Academy Belhard</a></div>
+                        <ol class="courses_list">
+                            <li class="list-item">Website development basics (HTML,CSS),</li>
+                            <li class="list-item">Modern Front-End with JavaScript and Html5</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="english">
+                    <div class="english__title"><h2>English</h2></div>
+                    <div class="english__info">B1 - Pre-Intermediate</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__copyright"><img src="assets/images/icons/copyright.png" alt="copyright"><span class="year">2022</span>
+            <span class="github__link"><a href="https://github.com/ygracoord" target="_blanc">ygracoord</a></span>
+            </div>
+            <div class="footer__rss"><a href="https://rs.school/js/" target="_blanc"><img src="assets/images/icons/svg/rss-icon.svg" alt="#" width="70" height="70"></a></div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
+
 </body>
 </html>

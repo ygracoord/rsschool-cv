@@ -1,0 +1,45 @@
+
+.footer {
+    @extend %size;
+    height: 50px;
+    background-color: $secondary;
+}
+.footer__inner {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__copyright, .footer__rss {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+
+    .year {
+        margin-left: 1rem;
+        font-family: $barlow;
+        font-size: 1.4rem;
+        letter-spacing: 1.3px;
+        color: $white;
+    }
+    .github__link a{
+        margin-left: 1rem;
+        text-decoration: none;
+        font-family: $cairo;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $primary;
+
+        &:hover {
+            color: darken($primary, 15%);
+        }
+        &:active {
+            color: red;
+        }
+
+    }
+}
+.footer__rss {
+    width: 100%;
+    max-width: 200;
+}

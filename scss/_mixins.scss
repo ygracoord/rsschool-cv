@@ -1,0 +1,23 @@
+
+@mixin title {
+    font-family: $barlow;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: darken($primary, 20%);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+@mixin fontGroup {
+    font-family: $cairo;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: $white;
+}
+@mixin h2group {
+    font-family: $barlow;
+    font-size: 2.2rem;
+    color: darken($white, 30%);
+    letter-spacing: 2.5px;
+    text-align: center;
+}
