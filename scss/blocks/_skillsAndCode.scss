@@ -1,0 +1,49 @@
+
+.skillsAndCode__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.skills, .code {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+
+    .skills__title h2 {
+        @include h2group;
+    }
+    .skills__list {
+        list-style: none;
+
+        .skills-item {
+            font-family: $cairo;
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.3;
+            letter-spacing: 2px;
+            color: $white;
+            transform: translateY(-1rem);
+
+            span {
+                color: darken($primary, 20%);
+            }
+        }
+    }
+}
+.code__title h2 {
+    @include h2group;
+}
+.code__content {
+    width: 120px;
+    margin: 0 auto;
+    transform: translateY(-1rem);
+    color: $white;
+    font-family: $cairo;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: 2px;
+
+    .purple {
+        color: red;
+    }
+}

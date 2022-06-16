@@ -1,0 +1,49 @@
+
+.summary {
+    @extend %size;
+
+    .summary__inner {
+        padding: 0 2rem;
+    }
+
+    h2 {
+        @include h2group;
+    }
+}
+.summary__text {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    transform: translateY(-1rem);
+    font-family: $cairo;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    color: $secondary;
+    text-align: center;
+}
+.about__me {
+    width: 100%;
+    max-width: 170px;
+    margin: 0 auto;
+}
+.btn {
+    width: 100%;
+    max-width: 170px;
+    height: 40px;
+    padding: 0 .5rem;
+    font-family: $cairo;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid $secondary;
+    border-radius: 10px;
+    background-color: transparent;
+    color: $white;
+    transition:  .2s linear;
+    cursor: pointer;
+
+    &:hover {
+        color: darken($primary, 25%);
+        transform: scale(1.1);
+    }
+}
