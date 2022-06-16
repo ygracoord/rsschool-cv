@@ -1,0 +1,74 @@
+
+.contacts {
+    @extend %size;
+    height: 200px;
+    border-bottom: 1px solid $secondary;
+}
+.contacts__inner {
+    @extend %size;
+    display: flex;
+    justify-content: space-around;
+
+    h3 {
+        @include title;
+        text-align: center;
+    }
+}
+.address, .contacts-info, .birth {
+    width: 100%;
+    max-width: 250px;
+}
+.address-info {
+    font-family: $cairo;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+    color: $white;
+
+    .map-icon {
+        margin-right: .6rem;
+    }
+}
+
+.number, .e-mail {
+    @include fontGroup;
+
+    a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: $secondary;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.birth p {
+    @include fontGroup;
+    text-align: center;
+}
+.discord, .e-mail {
+    transform: translateY(-1rem);
+}
+.git, .discord {
+    @include fontGroup;
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: $secondary;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .git-icon, .discord-icon {
+        margin-right: .6rem;
+    }
+}
